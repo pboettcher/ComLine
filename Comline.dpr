@@ -43,11 +43,11 @@ begin
   RegisterClass(Form);
   {Form}
   GetClientRect(GetDesktopWindow,Rect);
-  HForm:=CreateWindow('Window','Command line',
+  HForm:=CreateWindowW('Window','Command line',
   281673728,0,Rect.Bottom div 2,Rect.Right,48,0,0,hwn,NIL);
   {Memo}
   GetClientRect(HForm,Rect);
-  Memo1:=CreateWindowEx(512,'Edit','',1342181376 or ES_AUTOHSCROLL or
+  Memo1:=CreateWindowExW(512,'Edit','',1342181376 or ES_AUTOHSCROLL or
   ES_READONLY,
   0,0,Rect.Right-BW,Rect.Bottom,HForm,0,HWn,NIL);
   Font:=CreateFont(14,0,0,0,fw_DontCare,0,0,0,
