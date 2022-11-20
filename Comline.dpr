@@ -54,7 +54,7 @@ begin
   1,OUT_DEFAULT_PRECIS,CLIP_DEFAULT_PRECIS,PROOF_QUALITY,VARIABLE_PITCH,
   'MS Sans Serif');
   SendMessage(Memo1,48,Font,0);
-  SetWindowText(Memo1,GetCommandLine);
+  SetWindowTextW(Memo1,GetCommandLineW);
   SetFocus(Memo1);
   {Button}
   Button1:=CreateWindow('Button','Close',
